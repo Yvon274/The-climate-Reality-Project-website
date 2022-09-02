@@ -1,0 +1,606 @@
+body{
+    font-family: Arial, serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+li {
+    list-style-type: circle;
+}
+
+p, li { /* default paragraph stlying for all web pages */
+  color: black;
+  font-size: 16pt;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* header and nav styles */
+.logo{
+    max-width: 450px;
+}
+
+header {
+    border-bottom: solid;
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+nav ul { /* nav lists layouts */
+  display: flex;
+  flex-direction: row; /* flexbox direction of row */
+  list-style-type: none; /* get rid of the dot of nav list */
+  justify-content: space-around;
+  flex-wrap: wrap; /*wrap to the next line if needed*/
+}
+
+nav ul li {
+    text-transform: uppercase;
+    list-style-type: none;
+    line-height: 100%;
+}
+
+nav a { /* nav bars styling */
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: .5em 1em;
+  background-color: rgb(11, 62, 115);
+  border-radius: .7em;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 25pt;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgb(16, 80, 47);
+  text-align: center;
+  margin-top: 40px;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 24pt;
+  font-weight: bolder;
+  text-align: center;
+}
+
+h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 18pt;
+  text-align: center;
+}
+
+a { /*default all a elements*/
+  color: #09374f;
+}
+
+img { /*display all images with fluidity*/
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+li {
+  padding-left: 10px;
+  margin-left: 20px;
+  padding-right: 30px;
+}
+
+.highlight-p {
+  font-size: 19pt;
+  font-weight: bolder;
+  color: #294d65;
+}
+
+main { /*set div/sections to display as flexbox with a direction fo column*/
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  padding: 40px;
+}
+
+.intro-mission {
+  display: flex;
+  flex-direction: row;
+}
+
+.our-mission > p {
+  margin-right: 40px;
+}
+
+.mission-image {
+  padding-top: 60px;
+  margin-top: 60px;
+}
+
+.our-vision {
+  background-color: rgb(141, 198, 63);
+  border-radius: .7em;
+  text-align: center;
+}
+
+.our-vision > p {
+  font-family: Helvetica, sans-serif;
+}
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-background {
+  margin-bottom: 50px;
+}
+
+.intro-geo {
+  display: flex;
+  flex-direction: row;
+}
+
+.geo {
+  flex: 50%;
+}
+
+.intro-geo-p {
+  background-color: rgb(0, 167, 237);
+  padding: 5%;
+  font-style: italic;
+  border-radius: .7em;
+}
+
+.intro-geo-img{
+    padding: 3%;
+}
+
+.intro-geo-p > h2 {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.home-deij {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.home-deij > h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 32px;
+  background-color: rgb(141, 198, 63);
+  border-radius: .7em;
+  padding: 20px;
+}
+
+.landack > h3, .deij-diversity > h3 {
+  background-color: rgb(16, 80, 47);
+  border-radius: .7em;
+  color: white;
+  padding: 10px;
+  font-weight: normal;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.deij-land{
+  display: flex;
+  flex-direction: column;
+}
+
+.land-image {
+  text-align: center;
+}
+
+/* Events layout */
+
+.past-events-intro{
+    text-align: center;
+}
+
+.past-events{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.events-saving-us{
+  display:flex;
+  flex-direction: column;
+ justify-content: center;
+}
+
+.events-finger-lakes{
+  display:flex;
+  flex-direction: column;
+}
+
+.save-content, .fl-content {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.save-image, .fl-image {
+  text-align: center;
+}
+
+.eventpadding{
+    padding-bottom: 10%;
+}
+
+.events, .tab2-header, .interested, .tab4-header, .zoom-header{
+  background-color: rgb(141, 198, 63);
+  border-radius: .7em;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* tab styles */
+.interested, .zoom-header{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.zoom-header{
+    font-weight: normal;
+    padding: 1%;
+}
+
+.tab4-header{
+    background-color: rgb(16,80,47);
+    margin-left: 27%;
+    margin-right: 27%;
+    color: white;
+    padding: 1%;
+}
+
+.desktoptab2, .group-photo {
+    display: flex;
+    flex-direction: row;
+}
+
+.simplestlogo{
+    max-width: 300px;
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.tab2-header{
+    font-weight: normal;
+    padding: 1%;
+}
+
+.tab1-header{
+    color: rgb(11, 62, 115);
+}
+
+.welcomenote, .member-note{
+    background-color: rgb(178, 32, 37);
+    border-radius: .7em;
+    color: white;
+    padding: 1%;
+}
+
+
+.pagewithtabs{
+    background: rgb(0, 167, 327);
+}
+
+.tab a{
+    color: rgb(178, 32, 37);
+}
+
+.headerwithtabs{
+    background: white;
+}
+
+.h1withtabs{
+    color: white;
+}
+
+.h2withtabs{
+    color: rgb(141, 198, 63);
+}
+
+.tabimage, .memberimage{
+    text-align: center;
+}
+
+.actnow-image, .app-image, .example-image, .training-image, .committed-image, .rob-selfie{
+    max-width: 50%;
+}
+
+.example-image{
+    border: solid rgb(255, 197, 0);
+    border-radius: .7em;
+}
+
+.tab{
+    background: white;
+    padding: 3%;
+    margin: 10%;
+    margin-top: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabbutton{
+    background: rgb(255, 197, 0);
+    font-family: Helvetica, sans-serif;
+    font-weight: 1000;
+    margin-right: 3%;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+}
+
+#engageButton {
+    margin-left: 10%;
+}
+
+#successButton {
+    margin-right: 10%;
+}
+
+button:hover{
+    background: rgb(191, 149, 8);
+}
+
+.active {
+    background: white;
+    color: rgb(141, 198, 63)
+}
+
+.active:hover{
+    background: #c6c4c4;
+}
+
+.member-spotlight > h1 {
+  color: black;
+}
+
+.member-spotlight-intro {
+  text-align: center;
+  padding: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.member-spotlight-intro > p {
+  font-weight: bolder;
+  font-size: 18pt;
+}
+
+.rob-intro, .jennifer-intro, .member-final {
+  margin: 3%;
+}
+
+.rob-intro > h2, .jennifer-intro > h2 {
+  background-color: rgb(16,80,47);
+  border-radius: .7em;
+  color: white;
+  padding: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.member-final {
+  text-align: center;
+}
+
+.member-final > p {
+  font-size: 15pt;
+  font-weight: normal;
+}
+
+/* Design for carousel */
+/* .entire{
+    display:flex;
+    justify-content: center;
+} */
+
+/* .slides {
+
+display:flex;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+} */
+
+.slides, .slides2 {
+ text-align: center;
+ padding-left: 20%;
+ padding-right: 20%;
+}
+
+.button{
+    top: 50%;
+    position:relative;
+
+}
+
+.next-button {
+    position : relative;
+    background-color: white;
+    left: 90%;
+    top: -300px;
+    font-size: 80px;
+    border-radius: 10px;
+    border: 0px solid #008484;
+}
+.next-button:hover {
+  color: #b8b75d;
+  background-color: white;
+  border: 0px solid white;
+}
+.previous-button:hover {
+  color: #b8b75d;
+  background-color: white;
+  border: 0px solid white;
+}
+
+.previous-button  {
+  background-color: white;
+  left: 5%;
+  top: -300px;
+  font-size: 80px;
+  border-radius: 10px;
+  border: 0px solid #008484;
+}
+
+button {
+  cursor:pointer;
+}
+
+.dots{
+    display:flex;
+    justify-content: center;
+}
+
+.dot {
+  border-radius: 12px;
+  border: 0px solid #8dc63F;
+  background-color: rgb(0,167,237);
+  width: 25px;
+  height: 25px;
+}
+
+.slides > img, .slides2 > img {
+  height : 400px;
+}
+
+@media (max-width: 1000px) {
+  header nav ul { /* nav lists layouts */
+    display: flex;
+    flex-direction: column; /* flexbox direction of row */
+    list-style-type: none; /* get rid of the dot of nav list */
+    justify-content: space-around;
+    flex-wrap: wrap; /*wrap to the next line if needed*/
+  }
+  .next-button {
+      position : relative;
+      background-color: white;
+      left: 70%;
+      top: -300px;
+      font-size: 80px;
+      border-radius: 10px;
+      border: 0px solid #008484;
+  }
+
+@media (max-width:600px){
+    .hiddenimg{display:none}
+    .next-button {
+        position : relative;
+        background-color: white;
+        left: 80%;
+        top: -300px;
+        font-size: 80px;
+        border-radius: 10px;
+        border: 0px solid #008484;
+    }
+    .previous-button  {
+      background-color: white;
+      left: 5%;
+      top: -300px;
+      font-size: 80px;
+      border-radius: 10px;
+      border: 0px solid #008484;
+    }
+
+}
+  header nav ul li {
+    margin: 15px;
+  }
+
+  main { /*set div/sections to display as flexbox with a direction fo column*/
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .mission-image, .intro-geo-img, .actnow-image, .simplestlogo, .committed-image {
+    display: none;
+  }
+
+  .our-mission > p {
+    margin-right: 0;
+  }
+
+  .example-image{
+      max-width: 100%;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 800px) {
+    .tabbutton{
+        padding: 3px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-right: 0.5%;
+    }
+    .tab{
+        padding: 3%;
+        margin: 10%;
+        margin-top: 0px;
+    }
+    #engageButton {
+        margin-left: 10%;
+    }
+    #successButton {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 550px) {
+    .group-photo {
+        flex-direction: column;
+    }
+    .tabbutton{
+        padding: 1px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-right: 0px;
+    }
+    .tab{
+        padding: 3%;
+        margin: 3.8%;
+        margin-top: 0px;
+    }
+    #engageButton {
+        margin-left: 3.8%;
+    }
+    #successButton {
+        margin-right: 3.8%;
+    }
+
+    .next-button {
+        position : relative;
+        background-color: white;
+        left: 70%;
+        top: -300px;
+        font-size: 80px;
+        border-radius: 10px;
+        border: 0px solid #008484;
+    }
+
+
+    .tab2-header{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .tab1-bullet, .tab1-header{
+        margin-right: 1%;
+    }
+
+}
